@@ -22,4 +22,7 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: demotodo_production
+  username: demotodo
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+  
